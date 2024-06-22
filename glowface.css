@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #000033 0%, #003366 100%);
+    overflow: hidden;
+    font-size: 5em;
+    }
+    .container {
+      text-align: center;
+    }
+    .image-container { /*   how far from cursor */
+      perspective: 1000px;
+      
+    }
+    #uploadedImage {
+      max-width: 90vw;
+      max-height: 80vh;
+      border:gray 10px solid;
+      border-radius: 20px;
+      transition: transform 0.1s;
+      filter: brightness(1);
+    }
+    #uploadedImage:hover {
+      filter: brightness(1.5);
+    }
